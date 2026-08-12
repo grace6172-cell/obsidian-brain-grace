@@ -16,15 +16,13 @@ summary: AI Agent 身份定義（進階功能）
 
 ## 成員
 
-| Agent | Role | 說明 |
-|-------|------|------|
-| [[CTO]] | Chief Technology Officer | 技術決策 |
-| [[CFO]] | Chief Financial Officer | 財務管理 |
-| [[CoS]] | Chief of Staff | 秘書長 / 任務調度 |
-| [[SRE]] | Site Reliability Engineer | 維運 |
-| [[Strategist]] | 高階策略合夥人 | 策略挑戰 |
-| [[Legal]] | Legal Counsel | 法務顧問 |
-| [[ChemTeacher]] | High School Chemistry Teacher | 高中化學教學 |
+| Agent | Label | 說明 |
+|-------|-------|------|
+| [[CloudPM]] | `team:cloud-pm` | 雲端PM — AWS/騰訊雲產品架構、帳務、合作模式 |
+| [[SecurityPM]] | `team:security-pm` | 資安PM — Cloudflare/SSL/資安檢測/ISO 法規 |
+| [[CFO]] | `team:cfo` | 財務長 — 產品毛利/營收分析 |
+| [[DailyOps]] | `team:ops` | 日常營運助理 — 任務追蹤、跨部門事項 |
+| [[Unassigned]] | `team:template` | 未指定角色範本 — 複製後可定義新角色 |
 
 ## 對學員的建議
 

@@ -324,13 +324,11 @@ AI Agent 團隊
 
 | Agent | Label | 職責 |
 |-------|-------|------|
-| CTO | `team:cto` | 技術決策、架構設計 |
-| CFO | `team:cfo` | 財務管理、成本管控、HR |
-| CoS | `team:cos` | CEO 接觸點、Issue 路由 |
-| SRE | `team:sre` | 維運、K8s、監控 |
-| Strategist | `team:strategist` | 策略挑戰、壓力測試 |
-| Legal | `team:legal` | 合約審查、智財保護 |
-| ChemTeacher | `team:chem-teacher` | 高中化學教學（範例，可替換為任意角色） |
+| CloudPM | `team:cloud-pm` | 雲端PM — AWS/騰訊雲產品架構、帳務、合作模式 |
+| SecurityPM | `team:security-pm` | 資安PM — Cloudflare/SSL/資安檢測/ISO 法規 |
+| CFO | `team:cfo` | 財務長 — 產品毛利/營收分析 |
+| DailyOps | `team:ops` | 日常營運助理 — 任務追蹤、跨部門事項 |
+| Unassigned | `team:template` | 未指定角色範本（可替換為任意角色） |
 
 所有 Agent 必須遵守：
 - [[Areas/AI-Governance/Policies/anti-phishing|防釣魚政策]]
