@@ -14,11 +14,19 @@
 3. 系統維運層 — 分形文件結構、迴圈工作流
    → 保證系統自我迭代，對使用者透明
 
-已載入情境（透過啟動設定自動注入）：
-- 使命與目標：[[Identity/TELOS]]
-- 近期狀態：[[Identity/CONTEXT]]
-- 情境化偏好：[[Identity/PROFILE]]
-- 操作性規則：[[System/OPERATING_RULES]]
+已載入情境（透過 Claude Code 原生 @ 匯入語法自動注入，非 settings.json）：
+
+使命與目標：
+@Identity/TELOS.md
+
+近期狀態：
+@Identity/CONTEXT.md
+
+情境化偏好：
+@Identity/PROFILE.md
+
+操作性規則：
+@System/OPERATING_RULES.md
 </IDENTITY>
 
 <COGNITIVE_ARCHITECTURE>
@@ -248,7 +256,7 @@ Skills（/journal、/intake 等）是使用者手動呼叫的指令，三者配�
 ## 完整流程
 
 對話開始：
-→ settings.json contextFiles 自動注入 TELOS / CONTEXT / PROFILE / OPERATING_RULES
+→ CLAUDE.md 用 @ 匯入語法自動注入 TELOS / CONTEXT / PROFILE / OPERATING_RULES（見 <IDENTITY>，Claude Code 原生機制，非 settings.json）
 → AI 讀取後依 SESSION_PROTOCOL 輸出知識庫健康摘要（篇數、警告、待審批）
 → 使用者看到「維護已 N 天」→ 手動觸發 /maintain → AI 全庫掃描
 （startup 由 AI 執行，非 shell hook；使用者可說「跳過健康摘要」略過）
@@ -272,7 +280,7 @@ Skills（/journal、/intake 等）是使用者手動呼叫的指令，三者配�
 
 | 事件 | 執行者 | 保障強度 |
 |------|--------|---------|
-| 啟動注入 contextFiles | settings.json 自動 | 強（確定執行） |
+| 啟動注入 Identity/System 檔案 | CLAUDE.md `@` 匯入自動 | 強（確定執行） |
 | 健康摘要 | AI（CLAUDE.md 指令） | 中（AI 可跳過） |
 | 碎片 / 摘要填寫 | AI（SESSION_PROTOCOL） | 中（AI 可跳過） |
 | 檔案結構建立 | Stop hook shell script | 強（確定執行） |

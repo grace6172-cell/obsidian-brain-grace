@@ -1,10 +1,4 @@
 {
-  "contextFiles": [
-    "Identity/TELOS.md",
-    "Identity/CONTEXT.md",
-    "Identity/PROFILE.md",
-    "System/OPERATING_RULES.md"
-  ],
   "hooks": {
     "Stop": [
       {
