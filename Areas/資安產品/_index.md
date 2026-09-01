@@ -17,4 +17,4 @@ summary: 資安產品領域 — Cloudflare/SSL/資安檢測/ISO 法規知識的�
 
 ## 成員
 
-（尚無筆記，透過 `/intake` 或直接寫入自動累積）
+- [[CDN-WAF-WDR防護關係層級圖]] — Cloudflare 第一層預防/阻擋與 CyberEyes WDR 第二層偵測/回應的協防架構，含 Logpush 串接方式
